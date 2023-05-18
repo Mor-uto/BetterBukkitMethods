@@ -7,7 +7,7 @@ public ItemStack createItemStackGUI(Material type, String DisplayName) {
 	ItemStack item = new ItemStack(type, 1);
 	ItemMeta meta = item.getItemMeta();
   
-	meta.setDisplayName(plugin.ColorTranslate(DisplayName));
+	if (DisplayName != null) meta.setDisplayName(plugin.ColorTranslate(DisplayName));
   
 	item.setItemMeta(meta);
   
