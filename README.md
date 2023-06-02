@@ -1,4 +1,4 @@
 # BetterBukkitMethods
-These Are Bukkit API Methods That Are Meant To Make It Easier To Use ,These I Personally Use
+These are Bukkit API methods that are meant to make it easier to use, I personally use these.
 
-I Hope Your Happy Using Them :)
+I hope you are happy using them :)
