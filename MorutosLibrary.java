@@ -1,6 +1,6 @@
 //You will have to add in the imports and the package manually
 
-public class Helper {
+public class MorutosLibrary {
 
 	public void sendMessage(Player player, String message) {
 		player.SendMessage(ChatColor.translateAlternativeColorCodes('&', message));
