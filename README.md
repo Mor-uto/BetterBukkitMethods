@@ -1,4 +1,18 @@
 # BukkitEzLib
-this is a lib intended to make it easy to use the bukkit API in an easier way
+this is a small java library for bukkit/spigot intended to make it easier to use API
 
-I hope you are happy using them :)
+to use it create a MorutosLibrary variable so
+
+```java
+public MorutosLibrary lib = new MorutosLibrary();
+```
+
+or you can do
+
+```java
+public MorutosLibrary lib;
+
+public ClassName() {
+  lib = new MorutosLibrary();
+}
+```
