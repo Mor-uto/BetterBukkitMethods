@@ -20,4 +20,8 @@ public class MorutosLibrary {
 	public String transColor(String text) {
 		return ChatColor.translateAlternateColorCodes('&', text);
 	}
+
+	public void SendMessage(Player player, String message) {
+		player.sendMessage(transColor(message));
+	}
 }
