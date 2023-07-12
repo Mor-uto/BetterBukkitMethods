@@ -15,25 +15,22 @@ basically its so you send a message with color codes without needing ChatColor
 its typed like this 
 
 ```java
-lib.SendMessage(player, "&hi");
+lib.SendMessage(player, "&6hi");
 ```
 
-	public void sendMessage(Player player, String message) {
-		player.SendMessage(ChatColor.translateAlternativeColorCodes('&', message));
-	}
+`createIS`
 
-	public ItemStack createIS(Material type, String DisplayName) {
-		ItemStack item = new ItemStack(type, 1);
-		ItemMeta meta = item.getItemMeta();
+its a way to make an itemStack without having to make meta for it so to use it
 
-		if (DisplayName != null) meta.setDisplayName(plugin.ColorTranslate(DisplayName));
+```java
+ItemStack simpleSword = lib.createIS(Material.DIAMOND_SWORD, "DisplayName");
+```
 
-		item.setItemMeta(meta);
+`transColor`
 
-		return item;
-	}
+its like ChatColor.translateAlternativeColorCodes but much shorter to use it, its like sendMessage but its for translating only the color codes and not send anything
 
-	public String transColor(String text) {
-		return ChatColor.translateAlternateColorCodes('&', text);
-	}
+```java
+lib.transColor(YourTestHere);
+```
 }
